@@ -25,7 +25,7 @@ document.querySelector("#add").addEventListener("click", function(e) {
 
         // Appending div element to ul and its child
         ulElement.append(divElement);
-        divElement.append(checkBtn, listItem, deleteBtn);  
+        divElement.append(checkBtn, listItem, deleteBtn);
     }
 })
 

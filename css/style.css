@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,14 +7,13 @@
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: 'Macondo', cursive;
+    font-size: 1rem;
     width: 80%;
     margin: auto;
     background-color: #e5e5f7;
     /* opacity: 0.8; */
     background-image: radial-gradient(circle at center center, #e5e5f7, #addb51);
-    /* background-blend-mode: multiply; */
 }
 
 header {
@@ -22,7 +23,14 @@ header {
     text-align: center;
 }
 
-header h1, input {
+header h1 {
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+input {
     padding: 20px;
 }
 
@@ -32,24 +40,28 @@ input[type=text] {
 
 input[type=submit] {
     width: 20%;
+    background-color: tomato;
+    color: white;
+    border-style: none;
+    font-weight: 900;
 }
 
 input[type=submit]:hover {
-    background-color: tomato;
-    border-style: none;
-    color: white;
+    background-color: whitesmoke;
+    color: #000;
     cursor: pointer;
 }
 
 .list-section {
     border: 2px solid #222;
-    padding: 10px 100px 10px 20px;
+    padding: 20px;
     background-color: whitesmoke;
 }
 
 .list-section h2 {
     text-decoration: underline;
     text-align: center;
+    letter-spacing: 3px;
 }
 
 ul {
@@ -57,7 +69,11 @@ ul {
 }
 
 div {
-    padding: 15px;
+    padding: 10px;
+    border-bottom: 1px solid tomato;
+    border-left: 1px solid tomato;
+    border-right: 1px solid tomato;
+    margin: auto;
 }
 
 ul li {
@@ -78,15 +94,63 @@ ul li {
     float: right;
     padding: 5px;
     cursor: pointer;
-
+    background-color: tomato;
+    color: white;
 }
 
 .fa-trash:hover {
-    background-color: tomato;
-    color: white;
+    background-color: whitesmoke;
+    color: #000;
 }
 
 footer {
     text-align: center;
     padding: 20px;
 }
+
+@media screen and (max-width: 600px){
+
+    body {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        padding: 10px
+    }
+    form {
+        width: 95%;
+        margin: auto;
+    }
+    input {
+        display: block;
+        margin: auto;
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+    
+    input[type=submit] {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    ul li {
+        margin-left: 5px;
+    }
+
+    .list-section {
+        padding: 5px;
+        background-color: whitesmoke;
+    }
+
+    div {
+        padding: 5px;
+    }
+
+    .fa-trash {
+        padding: 2px;
+    }
+} 
