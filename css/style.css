@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    background-color: #e5e5f7;
+    /* opacity: 0.8; */
+    background-image: radial-gradient(circle at center center, #e5e5f7, #addb51);
+    /* background-blend-mode: multiply; */
+}
+
+header {
+    background-color: #9ACD32;
+    color: #000;
+    height: 200px;
+    text-align: center;
+}
+
+header h1, input {
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+input[type=submit] {
+    width: 20%;
+}
+
+input[type=submit]:hover {
+    background-color: tomato;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+.list-section {
+    border: 2px solid #222;
+    padding: 10px 100px 10px 20px;
+    background-color: whitesmoke;
+}
+
+.list-section h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+div {
+    padding: 15px;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none;
+}
+
+.fa-trash {
+    float: right;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.fa-trash:hover {
+    background-color: tomato;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
